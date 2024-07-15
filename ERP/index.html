@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPI.sys</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./Public/Visual/table.css">
+    <link rel="stylesheet" href="./Public/Visual/mainScr.css">
+    <script type= 'module' src="./Public/src/JS/InfoImport.js"></script>
+    <script type= 'module' src="./Public/src/JS/IFF.js"></script>
+
+
+</head>
+<body class="mainVis"> 
+    <div class="expandMenu">
+        <i class="bi bi-list"></i>  
+    </div>   
+    <nav class="">
+        <ul class="menuStyle">
+<li class="menuItem" >
+    <a href="#" class = Colabs>
+            <span class="icon" ><i class="bi bi-person-standing"></i></span>
+        <span class="txt-Link">Funcionarios</span>
+    </a>
+</li>
+<li class="menuItem">
+    <a href="#" class="Ferias">
+        <span class="icon"><i class="bi bi-brightness-alt-high-fill"></i></span>
+        <span class="txt-Link">Ferias</span>
+    </a>
+</li>
+<li class="menuItem">
+    <a href="#" class ="Materiais">
+        <span class="icon"><i class="bi bi-archive"></i></span>
+    <span class="txt-Link">Materiais</span>
+</a>
+</li>
+<li class="menuItem">
+    <a href="#" class ="Movimentos">
+        <span class="icon"><i class="bi bi-arrow-left-right"></i></span>
+    <span class="txt-Link">Movimentos</span>
+</a>
+            </li>
+        <li class="menuItem">
+            <a href="#" class ="Eventos">
+                <span class="icon"><i class="bi bi-receipt"></i></span>
+            <span class="txt-Link">Eventos</span>
+        </a>
+    </li>
+<li class="menuItem">
+    <a href="#" class ="Agenda">
+        <span class="icon"><i class="bi bi-calendar-date"></i></span>
+    <span class="txt-Link">Agenda</span>
+</a>
+</li>
+<li class="menuItem">
+    <a href="#" class="config">
+        <span class="icon"><i class="bi bi-gear"></i></span>
+    <span class="txt-Link">Config</span>
+</a>
+</li>
+</ul>
+</nav>
+<div class = "set">
+    <main class="table">
+        <section class="table-header" style="order: 0;">
+            <h1>Epi Control</h1>
+        </section>
+        <div class="index">
+            <input type="text" placeholder="Pesquisar">
+        </div>
+        <section class="table-body" style="order: 1;">
+            <table id="StartTable">
+                <!--fills html with data from import.js-->            
+            </table>
+        </section>
+    </main>
+    <div class="buttons">
+        <button class="btn">Incluir</button>
+        <button class="btn">Excluir</button>
+    </div>
+</div>  
+</body>
+</html>
