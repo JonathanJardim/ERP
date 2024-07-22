@@ -16,15 +16,10 @@ body, html {
 
     
 }
-@media (max-width: 1800px){
-  nav{
-    display:none;
-  }
-
-}
   nav {
-    max-width: 10vh;
-    width: 3vw;
+    max-width: 50vh;
+    min-width: 5vh;
+    width: 4.9vw;
     height: 100%;
     background-color: #fff5;
     backdrop-filter: blur(20px);
@@ -38,7 +33,7 @@ body, html {
     z-index: 2;
   }
   nav.expand{
-    width: 10vw;
+    width: 15vw;
     ul li.menuItem{
       background-color: #00000042;
       margin-bottom: 1%; 
@@ -51,10 +46,11 @@ body, html {
     height: 100px;
   }
   .expandMenu{
-    display: block;
+    display: inline;
+    position: absolute;
     width: 100%;
-    padding-left: 15px;
-    margin: 0 0 13vh 0;
+    padding-left: 0px;
+    margin: 0 0 13vh 0px;
     z-index: 0;
   }
   .expandMenu >i{
@@ -62,6 +58,10 @@ body, html {
   font-size: 20px;
   cursor: pointer;
   
+  }
+  .push{
+    margin-left: 0px;
+    margin-right: 0px;
   }
   ul{
     height: 100%;
@@ -86,7 +86,7 @@ body, html {
     margin-left: 0.5rem;
   }
   ul li.menuItem a .txt-Link{
-    margin-left: 1rem;
+    margin-left: 1.2rem;
 
   }
   ul li.menuItem a .icon >i{
@@ -130,4 +130,23 @@ button{
 }
 DIV{
   margin: 10px
+}
+@media (max-width: 1800px){
+  .hide{
+    display:none;
+  }
+  .expandMenu{
+    margin: 1.5vh 0px 0px 1.5vw;
+    z-index: 7;
+  }
+  .show{
+    display:block; 
+    z-index: 6;
+    max-width: 50vw;
+    width: 30vw;
+  }
+.push{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
 }
